@@ -1,6 +1,8 @@
 # Data definition
 I have made some changes in the schema by adding a new Routes table containing all routes in Prices table and their respective Route_codes (PK). The Prices table has been reduced to 3 columns (route_code, price, and day).
 
+The database used is ```postgresql 16``` as Django Rest Framework on my environment was compatible with postgresql version > 13.
+
 All the related data is driven from the initial tables provided in assignment and should be present in the container image of postgresql db. All the scripts to dump initial data are present in ```rates.sql``` file.
 
 **Ports**
@@ -65,7 +67,4 @@ alternatively, use `docker exec` if you do not have `psql` installed:
 ```bash
 docker exec -e PGPASSWORD=ratestask -it ratestask psql -U postgres
 ```
-
-Keep in mind that any data written in the Docker container will
-disappear when it shuts down. The next time you run it, it will start
-with a clean state.
+Once the database is successfully connected, please execute the scripts on SQLScripts.sql on it to include schema changes and new functions.
