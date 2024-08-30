@@ -3,7 +3,7 @@ I have made some changes in the schema by adding a new Routes table containing a
 
 The database used is ```postgresql 16``` as Django Rest Framework on my environment was compatible with postgresql version > 13.
 
-All the related data is driven from the initial tables provided in assignment and should be present in the container image of postgresql db. All the scripts to dump initial data are present in ```rates.sql``` file. After the database is successfully connected, please execute the sripts in ```SQLScripts.sql``` to add the becessary functions.
+All the related data is driven from the initial tables provided in assignment and should be present in the container image of postgresql db. All the scripts to dump initial data are present in ```rates.sql``` file. After the database is successfully connected, please execute the sripts in ```SQLScripts.sql``` to add the necessary functions.
 
 **Ports**
 
